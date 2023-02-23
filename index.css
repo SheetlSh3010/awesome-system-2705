@@ -14,6 +14,278 @@ body{
     background-color: #fff;
 }
 
+#chrome-app-container {
+    flex: 1 0 auto;
+}
+.genericSplash {
+    position: relative;
+    font-family: Futura-PT,FuturaStd,Tahoma,Arial,Verdana,Sans-Serif;
+    overflow: hidden;
+}
+.genericSplash div {
+    font-family: Futura-PT,FuturaStd,Tahoma,Arial,Verdana,Sans-Serif;
+}
+.genericSplash .mu__imageWrap {
+    max-width: 1400px;
+    height: auto;
+    margin: 65px auto 0;
+    top: 0;
+}
+.genericSplash .mu__imageWrap {
+    width: 100%;
+    
+}
+@media screen and (min-width: 768px) {
+ .genericSplash .spinner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}}
+.genericSplash span, .genericSplash div {
+    font-family: Futura-PT,FuturaStd,Tahoma,Arial,Verdana,Sans-Serif;
+}
+.genericSplash h1, .genericSplash h2, .genericSplash h3, .genericSplash h4, .genericSplash h5, .genericSplash h6, .genericSplash p, .genericSplash span, .genericSplash div {
+    font-family: Futura-PT,FuturaStd,Tahoma,Arial,Verdana,Sans-Serif;
+}
+.genericSplash .mu__imageWrap img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+.genericSplash .mu__imageWrap img {
+    min-width: 70%;
+}
+@media screen and (min-width: 768px){
+.genericSplash__copy {
+    width: 787px;
+    height: 210px;
+    top: calc(50% - 100px);
+    overflow: visible;
+}}
+.genericSplash__copy {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #000;
+    clear: both;
+    line-height: 1.25;
+}
+@media screen and (min-width: 768px){
+.genericSplash__copyContainer {
+    top: 0;
+}}
+.genericSplash__copyContainer {
+   
+    margin: 0 20px;
+}
+@media screen and (min-width: 768px){
+.genericSplash__title {
+    max-height: 72px;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+}
+}
+.genericSplash__title {
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px){
+.genericSplash__description {
+    max-height: 46px;
+    max-width: 100%;
+    line-height: 24px;
+    font-size: 18px;
+    padding: 0;
+    margin: auto;
+}
+}
+.genericSplash__description {
+    display: block;
+    overflow: hidden;
+    letter-spacing: 0.6px;
+}
+element.style {
+    color: #000000;
+    background: #ffffff;
+    box-shadow: 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff;
+}
+@media screen and (min-width: 768px){
+.genericSplash__description .highlight {
+    display: inline-block;
+}}
+@media screen and (min-width: 768px){
+.genericSplash__ctas {
+    position: relative;
+    width: 100%;
+    bottom: -15%;
+}}
+.genericSplash__ctas {
+    right: 0;
+    left: 0;
+}
+@media screen and (min-width: 768px){
+.genericSplash__ctasContainer:first-child {
+    margin-right: 24px;
+}}
+
+.genericSplash__ctasContainer:first-child {
+    margin-bottom: 22px;
+}
+@media screen and (min-width: 768px){
+.genericSplash__ctasContainer {
+    /* width: 50%; */
+    display: inline;
+}}
+.genericSplash__ctasContainer {
+    margin: auto;
+}
+element.style {
+    color: #000000;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    background: #ffffff;
+}
+@media screen and (min-width: 768px){
+.genericSplash .mu__cta {
+    display: inline-block;
+    min-width: 160px;
+    max-width: 300px;
+    max-height: 62px;
+    width: auto;
+}}
+.genericSplash .mu__cta {
+    padding: 8px 10px;
+    margin: auto;
+}
+@media (min-width: 425px){
+.genericSplash .mu__cta {
+    width: 100%;
+}}
+.genericSplash .mu__cta {
+    font-family: futura-pt,FuturaStd,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 39px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.4s,border-color 0.4s,color 0.4s ease-in-out;
+}
+
+/* element.style {
+    width: 132px;
+}
+.genericSplash .mu__cta span {
+    font-size: 16px;
+    margin: 0 9px;
+}
+.genericSplash .mu__cta>span {
+    display: block;
+    overflow: hidden;
+    line-height: 22px;
+    max-height: 44px;
+} */
+@media screen and (min-width: 768px){
+.genericSplash__overlay {
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-height: 74px;
+    width: 100%;
+    max-width: 1400px;
+}}
+
+.genericSplash__overlay {
+    margin: auto;
+    overflow: hidden;
+    background-color: #2d2d2d;
+    color: #fff;
+    filter: blur(0);
+}
+@media screen and (min-width: 768px){
+.genericSplash__overlayContainer {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}}
+.genericSplash__overlayContainer {
+    position: relative;
+}
+@media screen and (min-width: 768px){
+.genericSplash__serviceMessage {
+    height: 100%;
+    clear: both;
+    display: table;
+    font-size: 16px;
+}}
+.genericSplash__serviceMessage {
+    width: 100%;
+    table-layout: fixed;
+}
+@media screen and (min-width: 768px){
+.genericSplash__message {
+    display: table-cell;
+    max-width: 460px;
+    clear: both;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    position: relative;
+}}
+
+.genericSplash__message {
+    padding: 0 24px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    left: 0;
+    text-align: center;
+    text-decoration: none;
+}
+@media screen and (min-width: 768px){
+.genericSplash__messageContainer--icon {
+    vertical-align: top;
+    padding: 2px 0 0 0;
+    margin-right: 10px;
+}}
+@media screen and (min-width: 768px){
+.genericSplash__messageContainer {
+    color: #fff;
+    display: inline-block;
+}}
+.genericSplash__messageIcon {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+@media screen and (min-width: 768px){
+.genericSplash__messageContainer--copy {
+    vertical-align: middle;
+    max-width: 258px;
+}}
+
+@media screen and (min-width: 768px){
+.genericSplash__messageContainer {
+    color: #fff;
+    display: inline-block;
+}}
+
+
 /* ================================================footer Part=========================================================== */
 
 
