@@ -9,11 +9,190 @@
 </head>
 <body>
 
+  <div id="chrome-header">
+    <header>
+      <a href="#chrome-app-container" class="_1ojZITY _30rEw7y" data-testid="skip-to-content">Skip to main content</a>
+      <div class="_1KhubH5" data-testid="unsupported-browser-message">
+        <div class="_3I4FBSR">
+          <div class="_3vQ4Wmi">
+            <div class="_39134hq">your browser is not supported</div>
+            <div class="cjM-zS3">To use ASOS, we recommend using the latest versions of Chrome, Firefox, Safari or Edge</div>
+          </div>
+        </div>
+      </div>
+      <div class="_3FDhT9y VTBBowk" data-testid="topbar">
+        <div class="_2jtZkvR">
+          <ul class="_1sqB8tC">
+            <li>
+              <a href="https://marketplace.asos.com/?ctaref=Global+nav" data-testid="marketplace" class="_1cQFCx2">Marketplace</a>
+            </li>
+            <li>
+              <a href="https://www.asos.com/customer-care/" data-testid="help" class="_1cQFCx2">Help &amp; FAQs</a>
+            </li>
+            <li>
+              <div class="_25L--Pi" data-testid="country-selector">
+                <button class="w9hgW1d _19PGtzt" data-testid="country-selector-btn" type="button" aria-label="You're in India Change">
+                  <img src="https://assets.asosservices.com/storesa/images/flags/in.png" alt="India" class="RLpiNyQ">
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="_1I2c49V headroom-wrapper" style="height: 60px;">
+        <div id="chrome-sticky-header" class="headroom headroom--unfixed">
+          <div class="_3wSz5e5">
+            <div class="_25fsaDO _2zC79ar" data-testid="header">
+              <div class="d1hfo3-">
+                <button class="_31ffwSC" aria-label="Open navigation menu" data-testid="burger-menu-button">
+                  <span class="_259Wjcg _1aufEaZ _2Z869Kb f7kK7dC -rhP1cz gBrrjX4 _2nHArcS">
+
+                  </span>
+                </button>
+                <a class="_24SZgSx _6DZZlcW" href="https://www.asos.com/" data-testid="asoslogo">
+                  <img alt="ASOS logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN5bWJvbCBpZD0iYSIgdmlld0JveD0iMCAwIDIzIDI0Ij48cGF0aCBkPSJNNS4wNzYgMTIuMDE3YzAtMy44MTQgMi4zMjgtNy41MDkgNi41MjEtNy41MDkgNC4xOTQgMCA2LjUyMiAzLjY5NSA2LjUyMiA3LjUxIDAgMTAuMDk4LTEzLjA0MyAxMC4wOTUtMTMuMDQzIDBabTE3LjkxOC03LjUyMVYuNjAzaC00Ljg3NXYxLjUxNEMxNi4xMjcuNjgzIDEzLjk2Ny4wMTMgMTEuNjMgMGgtLjAzM0wxMS41NjQgMEM4Ljc0Mi4wMTYgNi4xNzguOTg4IDMuODU3IDMuMTEgMi41OCA0LjI5MSAxLjYwNyA1LjYzNS45NjQgNy4xMTQuMzI3IDguNTg4IDAgMTAuMjM5IDAgMTIuMDE1YzAgMS42NTguMjg4IDMuMjExLjg1MyA0LjYxNi41NjYgMS40MDUgMS40MjYgMi43MDUgMi41NiAzLjg2MyAxLjEzNCAxLjE2IDIuNDAxIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N2guMDVsLjA0OS4wMDFjMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY5LS44NzEuNzMtLjMxIDEuNDMzLS43MDcgMi4xMDMtMS4xODd2MS40NTVoNC44NzVWNC40OTZaIi8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYiIgdmlld0JveD0iMCAwIDU3IDI0Ij48cGF0aCBkPSJNNTAuOTY0IDE5LjMxNmMtMS4wMTggMS4wMDktMy40OTUgMS40MDUtNS4yODIuMjUxLTEuMDYtLjY4NC0xLjgwMS0xLjkxMy0xLjc5OC0zLjE5OGwtNC41NTktLjAwMmMuNDk4LTEuMzM1Ljc1LTIuNzk4Ljc1LTQuMzUyIDAtLjM0OC0uMDEyLS42OS0uMDM3LTEuMDI4LjMuMzc2LjY1MS43MjEgMS4wNTggMS4wMjIgMi40OTUgMS44MzMgNS42NSAxLjcyNiA4LjQwNSAyLjg2Ny42NDQuMjY3IDEuMjgzLjYxOSAxLjcwNSAxLjE4Ni44NiAxLjE1OS44MDYgMi4yMTUtLjI0MiAzLjI1NFptLTI5LjAwNy03LjI5OWMwLTMuODE0IDIuMzI4LTcuNTEgNi41MjEtNy41MVMzNSA4LjIwNCAzNSAxMi4wMThjMCAxMC4xLTEzLjA0MiAxMC4wOTYtMTMuMDQyIDBabS02LjEzNi0uMDAzYy0yLjQ5NS0xLjgzMy01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjItMS43MDUtMS4xODctLjcwMy0uOTQ2LS41OTMtMi40MjcuMjQxLTMuMjUzIDEuMDE1LTEuMDA2IDMuNDkyLTEuNDA4IDUuMjgyLS4yNTIgMS4wNi42ODUgMS44MDIgMS45MTQgMS43OTggMy4xOThsNC41OTYuMDAyYy0uNDk0IDEuMzMzLS43NDcgMi43OTgtLjc0NyA0LjM1OSAwIC4zNjMuMDE1LjcyMi4wNDIgMS4wNzVhNS42OTIgNS42OTIgMCAwIDAtMS4xMDItMS4wNzZaTS4xOTQgOS41NDhhNS43MzMgNS43MzMgMCAwIDAgMS45IDIuNDY2YzIuNDk1IDEuODMzIDUuNjUgMS43MjUgOC40MDUgMi44NjcuNjQ1LjI2NyAxLjI4NC42MTggMS43MDUgMS4xODYuNzAzLjk0Ni41OTMgMi40MjctLjI0MiAzLjI1My0xLjAxNyAxLjAxLTMuNDk1IDEuNDA2LTUuMjgxLjI1Mi0xLjA2LS42ODUtMS44MDItMS45MTMtMS43OTgtMy4xOThsLTQuNjg5LS4wMDJtMCAyLjI3OGMuNDk0IDEuMzkxIDEuMzc1IDIuNjQgMi41MzIgMy41MjYgMi4xNDkgMS42NDcgNS4wMDggMS45OCA3LjY4MyAxLjc2NSAxLjY0OC0uMTMyIDMuMzE3LS40NjQgNC43NDUtMS4zMTcgMS43ODUtMS4wNjcgMi44MzYtMy4wMiAzLjAxNi01LjA0M2ExMi4xMiAxMi4xMiAwIDAgMCAyLjEyNCAyLjkxM2MxLjEzNCAxLjE2IDIuNDAyIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N3YuMDAxaC4wOTljMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY4LS44NzEgMS4zNjUtLjU3OCAyLjYzMy0xLjQ2IDMuNzY2LTIuNjJhMTIuMDc4IDEyLjA3OCAwIDAgMCAyLjIwNy0zLjA3NWMuMzM3IDEuODcyIDEuMzcgMy42MTIgMi44NTggNC43NTMgMi4xNSAxLjY0NyA1LjAwOCAxLjk4IDcuNjgzIDEuNzY1IDIuMDc4LS4xNjggMy4yNi0uNDMgNC43NDYtMS4zMTggMy42Mi0yLjE2MyA0LjIyLTcuOTc1LjY2Ni0xMC42MS0yLjQ5NS0xLjgzMi01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjE5LTEuNzA1LTEuMTg2LS43MDItLjk0Ny0uNTkyLTIuNDI3LjI0Mi0zLjI1NCAxLjAxNS0xLjAwNiAzLjQ5Mi0xLjQwOCA1LjI4Mi0uMjUyIDEuMDYuNjg1IDEuODAxIDEuOTE0IDEuNzk4IDMuMTk4bDUuMTMuMDAzYy0uMDg1LTIuMjU4LTEuMjA4LTQuNDUyLTIuOTczLTUuODA1QzUyLjA0LjIgNDkuMTgyLS4xMzMgNDYuNTA4LjA4MiA0NC44Ni4yMTUgNDMuMTkuNTQ3IDQxLjc2MiAxLjRjLTEuNzc4IDEuMDYyLTIuODE1IDIuOTgtMy4wMSA0Ljk3LS42MjUtMS4xODgtMS40NzMtMi4yOC0yLjUzMy0zLjI2QzMzLjg5OC45ODcgMzEuMzM0LjAxNSAyOC41MSAwaC0uMDY2Yy0yLjgyMi4wMTYtNS4zODYuOTg4LTcuNzA3IDMuMTEtMS4xNDYgMS4wNi0yLjA0NCAyLjI0OS0yLjY4MSAzLjU1LS4zMjctMS44OTMtMS4zNjUtMy42NTYtMi44NjgtNC44MDhDMTMuMDQuMjA1IDEwLjE4MS0uMTI4IDcuNTA2LjA4NyA1Ljg1OC4yMiA0LjE5LjU1IDIuNzYgMS40MDUgMS41NTIgMi4xMjcuNjg2IDMuMjQ0LjE5NCA0LjUxIi8+PC9zeW1ib2w+PHVzZSBocmVmPSIjYSIgd2lkdGg9IjIzIi8+PHVzZSBocmVmPSIjYiIgeD0iMjIuOCIgd2lkdGg9IjU3Ii8+PC9zdmc+" class="_3JHHN36"></a>
+    <div class="_36m0W_u">
+      <div class="_1Pn6oie" data-testid="search-overlay-shadow" aria-hidden="true" role="presentation">
+
+      </div>
+      <form action="//www.asos.com/search/" class="_3j_6oNg" data-testid="search-form" method="get">
+        <div class="h-7-BEq" data-testid="search-field">
+        <span class="_2ARPr_X" aria-hidden="true"></span>
+        <label id="chrome-search-label" for="chrome-search" hidden="">Search for items and brands</label>
+        <input type="search" id="chrome-search" name="q" class="Cyuazsm _1LCOtZ3 SJwm9Lx" autocomplete="off" autocorrect="off" spellcheck="off" placeholder="Search for items and brands" data-testid="search-input" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" maxlength="150" value="">
+        <button class="kH5PAAC" type="submit" disabled="" data-testid="search-button-inline">
+          <svg viewBox="0 0 17 17" role="img" aria-labelledby="search-icon">
+            <title id="search-icon">Search</title>
+            <path fill="currentColor" fill-rule="nonzero" d="M7.65 15.3a7.65 7.65 0 1 1 5.997-2.9c-.01.012 3.183 3.297 3.183 3.297l-1.22 1.18s-3.144-3.283-3.154-3.275A7.618 7.618 0 0 1 7.65 15.3zm0-2a5.65 5.65 0 1 0 0-11.3 5.65 5.65 0 0 0 0 11.3z"></path>
+          </svg>
+        </button>
+        <div class="NOZiOAo">
+          <div class="_18a94Dv _1Qdyjs0 _1Qdyjs0" aria-live="polite">
+
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<ul class="_3fERfnD" data-testid="widgets">
+  <li class="_3Wo6fpk mD8oZFx">
+    <div>
+      <div>
+        <div id="myAccountDropdown" class="_3iG3MJz">
+          <button type="button" icon="_3iH_8F6 ToKj3Yy _3e2i979" icontype="accountUnfilled" data-testid="myAccountIcon" class="_6iPIuvw q-RpDXn _2SSHFPv" aria-expanded="false" aria-controls="myaccount-dropdown" aria-label="My Account"><span type="accountUnfilled" class="_3iH_8F6 ToKj3Yy _3e2i979 -rhP1cz gBrrjX4 _2nHArcS">
+
+          </span>
+        </button>
+        <div class="Gmnwu_e" data-testid="myaccount-dropdown" id="myaccount-dropdown"><div class="_33s2s-y">
+          <div class="Z8dxicz">
+            <div class="_10AVfLf">
+              <div class="_3dfrZFm">
+                <div class="_3hSCfS2">
+                  <span class="k3_c4ux">
+                    <a class="_1336dMe _1uUU2Co _1336dMe _1uUU2Co _1iiIFDL" href="https://my.asos.com/my-account?lang=en-GB&amp;store=ROW&amp;country=IN&amp;keyStoreDataversion=ornjx7v-36" data-testid="signin-link">Sign In</a>
+                    <div class="_3xmyjOP" aria-hidden="true">
+
+                    </div>
+                    <a class="_1336dMe _1uUU2Co _1336dMe _1uUU2Co _1iiIFDL" href="https://my.asos.com/identity/register?lang=en-GB&amp;store=ROW&amp;country=IN&amp;keyStoreDataversion=ornjx7v-36&amp;returnUrl=https%3A%2F%2Fwww.asos.com%2F%3F" data-testid="signup-link">Join</a>
+                  </span>
+                </div>
+                <button icon="_1xgEXu7 _2Dd1zdj qBDvXfo" class="_6iPIuvw q-RpDXn" data-testid="myaccount-close-btn" aria-label="Close" type="button">
+                  <span class="_1xgEXu7 _2Dd1zdj qBDvXfo -rhP1cz gBrrjX4 _2nHArcS">
+
+                  </span>
+                </button>
+              </div>
+              <div class="_12ChTgQ">
+                <ul class="_1LxmvWx">
+                  <li>
+                    <a href="https://my.asos.com/my-account?country=IN&amp;keyStoreDataversion=ornjx7v-36&amp;lang=en-GB&amp;nlid=nav%20header&amp;store=ROW" class="yPAUReS IAtMKef _2LRr-ij" data-testid="myaccount-link"><span class="CjZA9Ep _2RQ1Y7O _21TZCIw mEAMKy7">
+
+                    </span>My Account</a>
+                  </li>
+                  <li>
+                    <a href="https://my.asos.com/my-account/orders?country=IN&amp;keyStoreDataversion=ornjx7v-36&amp;lang=en-GB&amp;nlid=nav%20header&amp;store=ROW" class="yPAUReS IAtMKef _2LRr-ij" data-testid="myorders-link">
+                      <span class="_37wOqxg _2RQ1Y7O _21TZCIw mEAMKy7">
+
+                      </span>My Orders</a>
+                    </li>
+                    <li>
+                      <a href="https://www.asos.com/customer-care/returns-refunds/?nlid=nav%20header" class="yPAUReS IAtMKef _2LRr-ij" data-testid="returnsinformation-link">
+                        <span class="_2W-DtGN _2RQ1Y7O _21TZCIw mEAMKy7">
+
+                        </span>Returns Information</a>
+                      </li>
+                      <li>
+                        <a href="https://my.asos.com/my-account/contact-preferences?country=IN&amp;keyStoreDataversion=ornjx7v-36&amp;lang=en-GB&amp;nlid=nav%20header&amp;store=ROW" class="yPAUReS IAtMKef _2LRr-ij" data-testid="contactpreferences-link">
+                          <span class="_2jqSWSL _2RQ1Y7O _21TZCIw mEAMKy7">
+
+                          </span>Contact Preferences</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="_3Wo6fpk">
+      <a type="a" href="https://www.asos.com/saved-lists/?nlid=nav header" icon="_26lJ0fq ToKj3Yy _3e2i979" icontype="heartUnfilled" data-testid="savedItemsIcon" class="_6iPIuvw q-RpDXn _2SSHFPv" aria-label="Saved Items">
+        <span type="heartUnfilled" class="_26lJ0fq ToKj3Yy _3e2i979 -rhP1cz gBrrjX4 _2nHArcS"></span>
+      </a>
+    </li>
+    <li class="_3Wo6fpk"><a type="a" href="https://www.asos.com/bag?nlid=nav header" icon="AckDUvD ToKj3Yy _3e2i979" icontype="bagUnfilled" data-testid="miniBagIcon" class="_6iPIuvw q-RpDXn _2SSHFPv" aria-label="Bag 0 items">
+      <span type="bagUnfilled" class="AckDUvD ToKj3Yy _3e2i979 -rhP1cz gBrrjX4 _2nHArcS"></span>
+    </a>
+  </li>
+</ul>
+</div>
+</div>
+<div id="sc-sticky-header-portal"></div>
+</div>
+</div>
+<section id="globalBannerComponent" class="src-GlobalBanner-GlobalBanner_globalBanner">
+  <div class="src-GlobalBanner-GlobalBanner_loaded">
+    <div class="src-GlobalBanner-Column-Column_column" style="background-color: rgb(204, 255, 0);">
+      <div class="src-GlobalBanner-Unit-Unit_unit src-GlobalBanner-Unit-Unit_unitCenter">
+        <a href="/women/ctas/coded-promos/promo-3/cat/?cid=50047&amp;ctaref=globalbanner|ww|upto25offeverything" class="src-GlobalBanner-Button-Button_button" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);">WOMEN</a>
+        <button class="src-GlobalBanner-Content-Content_content src-GlobalBanner-Content-Content_contentCenter" aria-describedby="globalBannerTooltip-0" style="font-size: 14px; color: rgb(0, 0, 0);">
+          <span class="src-GlobalBanner-Content-Content_copy"><strong>UP TO 25% OFF EVERYTHING!*<br>
+LET'S GO SHOPPING<br>
+With code: DAWN</strong>
+</span>
+</button>
+<div class="
+      src-GlobalBanner-Tooltip-Tooltip_wrapperCenter src-GlobalBanner-Tooltip-Tooltip_hidden
+    ">
+    <div class="src-GlobalBanner-Tooltip-Tooltip_tooltip" id="globalBannerTooltip-globalBannerTooltip-0">*Enter code DAWN at checkout to receive discount. Percentage discounts will vary depending upon the product purchased. Ends 8am UTC on 26 February 2023. Code can be used multiple times per customer up to a maximum pre-discount spend of £500/€690 per order. Can’t be used with other promo codes or on gift vouchers, delivery charges, Premier Delivery or ASOS Marketplace. Country exclusions apply. Selected marked products excluded from promo.
+
+    </div>
+  </div>
+  <a href="/men/ctas/coded-promos/promo-5/cat/?cid=50059&amp;ctaref=globalbanner|mw|upto25offeverything" class="src-GlobalBanner-Button-Button_button" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);">MEN</a>
+</div>
+</div>
+</div>
+</section>
+<div class="_3bNxItQ" style="display:none">
+  <div class="_1uU7K8C"><
+    div class="aaO9uKX">
+    <div class="_3z77gIp _3t_xmNR">
+      <div class="_2wLMA10">
+
+      </div>
+      <div class="_320d9TZ -BhHZAH">ASOS</div>
+      <div>Available in the Play Store</div>
+    </div>
+    <div class="_3qe3HxY">
+      <button data-testid="native-app-banner-open" class="_JXIMdP _1AYnqSm">View in App</button>
+      <button class="_3zWq_3v _1AYnqSm">Get App</button></div></div></div>
+      <button class="_13FVfZq _1LsdtI9" aria-label="Close">X</button></div>
+    </header></div>
+
   <main id="chrome-app-container">
-
-
-
-
     <section class="mu-section">
         <div class="genericSplash js-fullWidthContainer ">
             <div class="genericSplash__wrapper">
@@ -81,36 +260,7 @@
             </div>
         </div>
     </section>
-    
-    
-    
-    
-    
-    
-    
-        
-    
-    
-    
-    
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- ======================= footer part ===================== -->
      <div id="slogo">
