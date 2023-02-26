@@ -4,265 +4,500 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project E-commerce</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="sorting.css">
+    <link rel="stylesheet" href="men'sHomePage.css">
+    <link rel="stylesheet" href="womens1.css">
+    <link rel="stylesheet" type="text/css" href="product.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 </head>
 <body>
+    <div id="headPart1">
+        <a href="">Marketplace</a>
+        <a href="https://www.asos.com/customer-care/">Help & FAQs</a>
+        <button><img src="https://assets.asosservices.com/storesa/images/flags/in.png" alt=""></button>
+    </div>
+    <div id="headPart2">
+        <div><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN5bWJvbCBpZD0iYSIgdmlld0JveD0iMCAwIDIzIDI0Ij48cGF0aCBkPSJNNS4wNzYgMTIuMDE3YzAtMy44MTQgMi4zMjgtNy41MDkgNi41MjEtNy41MDkgNC4xOTQgMCA2LjUyMiAzLjY5NSA2LjUyMiA3LjUxIDAgMTAuMDk4LTEzLjA0MyAxMC4wOTUtMTMuMDQzIDBabTE3LjkxOC03LjUyMVYuNjAzaC00Ljg3NXYxLjUxNEMxNi4xMjcuNjgzIDEzLjk2Ny4wMTMgMTEuNjMgMGgtLjAzM0wxMS41NjQgMEM4Ljc0Mi4wMTYgNi4xNzguOTg4IDMuODU3IDMuMTEgMi41OCA0LjI5MSAxLjYwNyA1LjYzNS45NjQgNy4xMTQuMzI3IDguNTg4IDAgMTAuMjM5IDAgMTIuMDE1YzAgMS42NTguMjg4IDMuMjExLjg1MyA0LjYxNi41NjYgMS40MDUgMS40MjYgMi43MDUgMi41NiAzLjg2MyAxLjEzNCAxLjE2IDIuNDAxIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N2guMDVsLjA0OS4wMDFjMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY5LS44NzEuNzMtLjMxIDEuNDMzLS43MDcgMi4xMDMtMS4xODd2MS40NTVoNC44NzVWNC40OTZaIi8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYiIgdmlld0JveD0iMCAwIDU3IDI0Ij48cGF0aCBkPSJNNTAuOTY0IDE5LjMxNmMtMS4wMTggMS4wMDktMy40OTUgMS40MDUtNS4yODIuMjUxLTEuMDYtLjY4NC0xLjgwMS0xLjkxMy0xLjc5OC0zLjE5OGwtNC41NTktLjAwMmMuNDk4LTEuMzM1Ljc1LTIuNzk4Ljc1LTQuMzUyIDAtLjM0OC0uMDEyLS42OS0uMDM3LTEuMDI4LjMuMzc2LjY1MS43MjEgMS4wNTggMS4wMjIgMi40OTUgMS44MzMgNS42NSAxLjcyNiA4LjQwNSAyLjg2Ny42NDQuMjY3IDEuMjgzLjYxOSAxLjcwNSAxLjE4Ni44NiAxLjE1OS44MDYgMi4yMTUtLjI0MiAzLjI1NFptLTI5LjAwNy03LjI5OWMwLTMuODE0IDIuMzI4LTcuNTEgNi41MjEtNy41MVMzNSA4LjIwNCAzNSAxMi4wMThjMCAxMC4xLTEzLjA0MiAxMC4wOTYtMTMuMDQyIDBabS02LjEzNi0uMDAzYy0yLjQ5NS0xLjgzMy01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjItMS43MDUtMS4xODctLjcwMy0uOTQ2LS41OTMtMi40MjcuMjQxLTMuMjUzIDEuMDE1LTEuMDA2IDMuNDkyLTEuNDA4IDUuMjgyLS4yNTIgMS4wNi42ODUgMS44MDIgMS45MTQgMS43OTggMy4xOThsNC41OTYuMDAyYy0uNDk0IDEuMzMzLS43NDcgMi43OTgtLjc0NyA0LjM1OSAwIC4zNjMuMDE1LjcyMi4wNDIgMS4wNzVhNS42OTIgNS42OTIgMCAwIDAtMS4xMDItMS4wNzZaTS4xOTQgOS41NDhhNS43MzMgNS43MzMgMCAwIDAgMS45IDIuNDY2YzIuNDk1IDEuODMzIDUuNjUgMS43MjUgOC40MDUgMi44NjcuNjQ1LjI2NyAxLjI4NC42MTggMS43MDUgMS4xODYuNzAzLjk0Ni41OTMgMi40MjctLjI0MiAzLjI1My0xLjAxNyAxLjAxLTMuNDk1IDEuNDA2LTUuMjgxLjI1Mi0xLjA2LS42ODUtMS44MDItMS45MTMtMS43OTgtMy4xOThsLTQuNjg5LS4wMDJtMCAyLjI3OGMuNDk0IDEuMzkxIDEuMzc1IDIuNjQgMi41MzIgMy41MjYgMi4xNDkgMS42NDcgNS4wMDggMS45OCA3LjY4MyAxLjc2NSAxLjY0OC0uMTMyIDMuMzE3LS40NjQgNC43NDUtMS4zMTcgMS43ODUtMS4wNjcgMi44MzYtMy4wMiAzLjAxNi01LjA0M2ExMi4xMiAxMi4xMiAwIDAgMCAyLjEyNCAyLjkxM2MxLjEzNCAxLjE2IDIuNDAyIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N3YuMDAxaC4wOTljMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY4LS44NzEgMS4zNjUtLjU3OCAyLjYzMy0xLjQ2IDMuNzY2LTIuNjJhMTIuMDc4IDEyLjA3OCAwIDAgMCAyLjIwNy0zLjA3NWMuMzM3IDEuODcyIDEuMzcgMy42MTIgMi44NTggNC43NTMgMi4xNSAxLjY0NyA1LjAwOCAxLjk4IDcuNjgzIDEuNzY1IDIuMDc4LS4xNjggMy4yNi0uNDMgNC43NDYtMS4zMTggMy42Mi0yLjE2MyA0LjIyLTcuOTc1LjY2Ni0xMC42MS0yLjQ5NS0xLjgzMi01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjE5LTEuNzA1LTEuMTg2LS43MDItLjk0Ny0uNTkyLTIuNDI3LjI0Mi0zLjI1NCAxLjAxNS0xLjAwNiAzLjQ5Mi0xLjQwOCA1LjI4Mi0uMjUyIDEuMDYuNjg1IDEuODAxIDEuOTE0IDEuNzk4IDMuMTk4bDUuMTMuMDAzYy0uMDg1LTIuMjU4LTEuMjA4LTQuNDUyLTIuOTczLTUuODA1QzUyLjA0LjIgNDkuMTgyLS4xMzMgNDYuNTA4LjA4MiA0NC44Ni4yMTUgNDMuMTkuNTQ3IDQxLjc2MiAxLjRjLTEuNzc4IDEuMDYyLTIuODE1IDIuOTgtMy4wMSA0Ljk3LS42MjUtMS4xODgtMS40NzMtMi4yOC0yLjUzMy0zLjI2QzMzLjg5OC45ODcgMzEuMzM0LjAxNSAyOC41MSAwaC0uMDY2Yy0yLjgyMi4wMTYtNS4zODYuOTg4LTcuNzA3IDMuMTEtMS4xNDYgMS4wNi0yLjA0NCAyLjI0OS0yLjY4MSAzLjU1LS4zMjctMS44OTMtMS4zNjUtMy42NTYtMi44NjgtNC44MDhDMTMuMDQuMjA1IDEwLjE4MS0uMTI4IDcuNTA2LjA4NyA1Ljg1OC4yMiA0LjE5LjU1IDIuNzYgMS40MDUgMS41NTIgMi4xMjcuNjg2IDMuMjQ0LjE5NCA0LjUxIi8+PC9zeW1ib2w+PHVzZSBocmVmPSIjYSIgd2lkdGg9IjIzIi8+PHVzZSBocmVmPSIjYiIgeD0iMjIuOCIgd2lkdGg9IjU3Ii8+PC9zdmc+" alt=""></div>
+        <div id="asosWomenHeading">WOMEN</div>
+        <div id="asosMenHeading">MEN</div>
+        <div id="asosUserSearchHeading"><input type="text" placeholder="Search for items and brands"></div>
+        <div ><img id="asosUserInfoHeading" src="data:image/png;base64,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" alt=""></div>
+        <div id="asosUserFavHeading"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_drvzmAmdlY-jFBqw2F5PKHtg2HOjoX97bA&usqp=CAU" alt=""></div>
+        <div id="asosUserCartHeading"><img src="data:image/jpeg;base64,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" alt=""></div>
+    </div>
+    <div id="asosUserInfoDispHeading">
+    </div>
+    <div id="headPart3">
+        <div id="saleHover">Sale</div>
+        <div id="newInHover">New in</div>
+        <div id="clothingHover">Clothing</div>
+        <div id="shoesHover">Shoes</div>
+        <div id="sportswearHover">Sportswear</div>
+        <div id="accessoriesHover">Accessories</div>
+        <div id="summerHover">Summer</div>
+        <div id="trendingNowHover">Trending_Now</div>
+        <div id="topmanHover">Topman</div>
+        <div id="facePlusBodyHover">Face+Body</div>
+        <div id="brandHover">Brands</div>
+        <div id="outletHover">Outlet</div>
+        <div id="marketPlaceHover">Marketplace</div>
+    </div>
+    <div id="headPart4">
+    </div>
+    <div id="sortbar">
+    </div>
+    <div id="container">
 
-  <div id="chrome-header">
-    <header>
-      <a href="#chrome-app-container" class="_1ojZITY _30rEw7y" data-testid="skip-to-content">Skip to main content</a>
-      <div class="_1KhubH5" data-testid="unsupported-browser-message">
-        <div class="_3I4FBSR">
-          <div class="_3vQ4Wmi">
-            <div class="_39134hq">your browser is not supported</div>
-            <div class="cjM-zS3">To use ASOS, we recommend using the latest versions of Chrome, Firefox, Safari or Edge</div>
+    </div>
+    <!-- ****************************************PRODUCT SECTION********************************** -->
+   <div id="asosProductSeperateDivision">
+    <div id="parent">
+      <div class="column">
+        <div id="slide-wrapper">
+        <div id="slider">
+      </div>
+      </div>
+      <div  id="carouselExampleControls" class="carousel slide" >
+        <div class="carousel-inner">
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+    <div id="second">
+
+      
+      <h2></h2> 
+
+      
+      <p id="eur"></p>
+      <h5><pre>&#9733;&#9733;&#9733;&#9733;&#9733; 4.8 (5,623)</pre></h5>
+      
+      <p id="col"></p>
+      
+      <p> <B>Size:</B></p>
+      <br />
+
+      <select id="sizes">
+        <option value="">Please select</option>
+        <option value="UK 4">UK 4</option>
+        <option value="UK 4.5">UK 4.5</option>
+        <option value="UK 5">UK 5</option>
+        <option value="UK 5.5">UK 5.5</option>
+        <option value="UK 6">UK 6</option>
+        <option value="UK 6.5">UK 6.5</option>
+        <option value="UK 7">UK 7</option>
+        <option value="UK 7.5">UK 7.5</option>
+        <option value="UK 8">UK 8</option>
+        <option value="UK 8.5">UK 8.5</option>
+        <option value="UK 9">UK 9</option>
+        <option value="UK 9.5">UK 9.5</option>
+        <option value="UK 10">UK 10</option>
+        <option value="UK 10.5">UK 10.5</option>
+        <option value="UK 11">UK 11</option>
+        <option value="UK 11.5">UK 11.5</option>
+        <option value="UK 12">UK 12</option>
+        <option value="UK 12.5">UK 12.5</option>
+        <option value="UK 13">UK 13</option>
+      </select>
+      <br />
+      <div id="ple">
+
+      </div>
+      <div id="bag">
+        <button id="bu">ADD TO BAG</button>
+        <button id="heart">🤍</button>
+      </div>
+
+      <div id="Delivery">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            class="bi bi-truck"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
           </div>
-        </div>
-      </div>
-      <div class="_3FDhT9y VTBBowk" data-testid="topbar">
-        <div class="_2jtZkvR">
-          <ul class="_1sqB8tC">
-            <li>
-              <a href="https://marketplace.asos.com/?ctaref=Global+nav" data-testid="marketplace" class="_1cQFCx2">Marketplace</a>
-            </li>
-            <li>
-              <a href="https://www.asos.com/customer-care/" data-testid="help" class="_1cQFCx2">Help &amp; FAQs</a>
-            </li>
-            <li>
-              <div class="_25L--Pi" data-testid="country-selector">
-                <button class="w9hgW1d _19PGtzt" data-testid="country-selector-btn" type="button" aria-label="You're in India Change">
-                  <img src="https://assets.asosservices.com/storesa/images/flags/in.png" alt="India" class="RLpiNyQ">
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="_1I2c49V headroom-wrapper" style="height: 60px;">
-        <div id="chrome-sticky-header" class="headroom headroom--unfixed">
-          <div class="_3wSz5e5">
-            <div class="_25fsaDO _2zC79ar" data-testid="header">
-              <div class="d1hfo3-">
-                <button class="_31ffwSC" aria-label="Open navigation menu" data-testid="burger-menu-button">
-                  <span class="_259Wjcg _1aufEaZ _2Z869Kb f7kK7dC -rhP1cz gBrrjX4 _2nHArcS">
-
-                  </span>
-                </button>
-                <a class="_24SZgSx _6DZZlcW" href="https://www.asos.com/" data-testid="asoslogo">
-                  <img alt="ASOS logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN5bWJvbCBpZD0iYSIgdmlld0JveD0iMCAwIDIzIDI0Ij48cGF0aCBkPSJNNS4wNzYgMTIuMDE3YzAtMy44MTQgMi4zMjgtNy41MDkgNi41MjEtNy41MDkgNC4xOTQgMCA2LjUyMiAzLjY5NSA2LjUyMiA3LjUxIDAgMTAuMDk4LTEzLjA0MyAxMC4wOTUtMTMuMDQzIDBabTE3LjkxOC03LjUyMVYuNjAzaC00Ljg3NXYxLjUxNEMxNi4xMjcuNjgzIDEzLjk2Ny4wMTMgMTEuNjMgMGgtLjAzM0wxMS41NjQgMEM4Ljc0Mi4wMTYgNi4xNzguOTg4IDMuODU3IDMuMTEgMi41OCA0LjI5MSAxLjYwNyA1LjYzNS45NjQgNy4xMTQuMzI3IDguNTg4IDAgMTAuMjM5IDAgMTIuMDE1YzAgMS42NTguMjg4IDMuMjExLjg1MyA0LjYxNi41NjYgMS40MDUgMS40MjYgMi43MDUgMi41NiAzLjg2MyAxLjEzNCAxLjE2IDIuNDAxIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N2guMDVsLjA0OS4wMDFjMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY5LS44NzEuNzMtLjMxIDEuNDMzLS43MDcgMi4xMDMtMS4xODd2MS40NTVoNC44NzVWNC40OTZaIi8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYiIgdmlld0JveD0iMCAwIDU3IDI0Ij48cGF0aCBkPSJNNTAuOTY0IDE5LjMxNmMtMS4wMTggMS4wMDktMy40OTUgMS40MDUtNS4yODIuMjUxLTEuMDYtLjY4NC0xLjgwMS0xLjkxMy0xLjc5OC0zLjE5OGwtNC41NTktLjAwMmMuNDk4LTEuMzM1Ljc1LTIuNzk4Ljc1LTQuMzUyIDAtLjM0OC0uMDEyLS42OS0uMDM3LTEuMDI4LjMuMzc2LjY1MS43MjEgMS4wNTggMS4wMjIgMi40OTUgMS44MzMgNS42NSAxLjcyNiA4LjQwNSAyLjg2Ny42NDQuMjY3IDEuMjgzLjYxOSAxLjcwNSAxLjE4Ni44NiAxLjE1OS44MDYgMi4yMTUtLjI0MiAzLjI1NFptLTI5LjAwNy03LjI5OWMwLTMuODE0IDIuMzI4LTcuNTEgNi41MjEtNy41MVMzNSA4LjIwNCAzNSAxMi4wMThjMCAxMC4xLTEzLjA0MiAxMC4wOTYtMTMuMDQyIDBabS02LjEzNi0uMDAzYy0yLjQ5NS0xLjgzMy01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjItMS43MDUtMS4xODctLjcwMy0uOTQ2LS41OTMtMi40MjcuMjQxLTMuMjUzIDEuMDE1LTEuMDA2IDMuNDkyLTEuNDA4IDUuMjgyLS4yNTIgMS4wNi42ODUgMS44MDIgMS45MTQgMS43OTggMy4xOThsNC41OTYuMDAyYy0uNDk0IDEuMzMzLS43NDcgMi43OTgtLjc0NyA0LjM1OSAwIC4zNjMuMDE1LjcyMi4wNDIgMS4wNzVhNS42OTIgNS42OTIgMCAwIDAtMS4xMDItMS4wNzZaTS4xOTQgOS41NDhhNS43MzMgNS43MzMgMCAwIDAgMS45IDIuNDY2YzIuNDk1IDEuODMzIDUuNjUgMS43MjUgOC40MDUgMi44NjcuNjQ1LjI2NyAxLjI4NC42MTggMS43MDUgMS4xODYuNzAzLjk0Ni41OTMgMi40MjctLjI0MiAzLjI1My0xLjAxNyAxLjAxLTMuNDk1IDEuNDA2LTUuMjgxLjI1Mi0xLjA2LS42ODUtMS44MDItMS45MTMtMS43OTgtMy4xOThsLTQuNjg5LS4wMDJtMCAyLjI3OGMuNDk0IDEuMzkxIDEuMzc1IDIuNjQgMi41MzIgMy41MjYgMi4xNDkgMS42NDcgNS4wMDggMS45OCA3LjY4MyAxLjc2NSAxLjY0OC0uMTMyIDMuMzE3LS40NjQgNC43NDUtMS4zMTcgMS43ODUtMS4wNjcgMi44MzYtMy4wMiAzLjAxNi01LjA0M2ExMi4xMiAxMi4xMiAwIDAgMCAyLjEyNCAyLjkxM2MxLjEzNCAxLjE2IDIuNDAyIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N3YuMDAxaC4wOTljMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY4LS44NzEgMS4zNjUtLjU3OCAyLjYzMy0xLjQ2IDMuNzY2LTIuNjJhMTIuMDc4IDEyLjA3OCAwIDAgMCAyLjIwNy0zLjA3NWMuMzM3IDEuODcyIDEuMzcgMy42MTIgMi44NTggNC43NTMgMi4xNSAxLjY0NyA1LjAwOCAxLjk4IDcuNjgzIDEuNzY1IDIuMDc4LS4xNjggMy4yNi0uNDMgNC43NDYtMS4zMTggMy42Mi0yLjE2MyA0LjIyLTcuOTc1LjY2Ni0xMC42MS0yLjQ5NS0xLjgzMi01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjE5LTEuNzA1LTEuMTg2LS43MDItLjk0Ny0uNTkyLTIuNDI3LjI0Mi0zLjI1NCAxLjAxNS0xLjAwNiAzLjQ5Mi0xLjQwOCA1LjI4Mi0uMjUyIDEuMDYuNjg1IDEuODAxIDEuOTE0IDEuNzk4IDMuMTk4bDUuMTMuMDAzYy0uMDg1LTIuMjU4LTEuMjA4LTQuNDUyLTIuOTczLTUuODA1QzUyLjA0LjIgNDkuMTgyLS4xMzMgNDYuNTA4LjA4MiA0NC44Ni4yMTUgNDMuMTkuNTQ3IDQxLjc2MiAxLjRjLTEuNzc4IDEuMDYyLTIuODE1IDIuOTgtMy4wMSA0Ljk3LS42MjUtMS4xODgtMS40NzMtMi4yOC0yLjUzMy0zLjI2QzMzLjg5OC45ODcgMzEuMzM0LjAxNSAyOC41MSAwaC0uMDY2Yy0yLjgyMi4wMTYtNS4zODYuOTg4LTcuNzA3IDMuMTEtMS4xNDYgMS4wNi0yLjA0NCAyLjI0OS0yLjY4MSAzLjU1LS4zMjctMS44OTMtMS4zNjUtMy42NTYtMi44NjgtNC44MDhDMTMuMDQuMjA1IDEwLjE4MS0uMTI4IDcuNTA2LjA4NyA1Ljg1OC4yMiA0LjE5LjU1IDIuNzYgMS40MDUgMS41NTIgMi4xMjcuNjg2IDMuMjQ0LjE5NCA0LjUxIi8+PC9zeW1ib2w+PHVzZSBocmVmPSIjYSIgd2lkdGg9IjIzIi8+PHVzZSBocmVmPSIjYiIgeD0iMjIuOCIgd2lkdGg9IjU3Ii8+PC9zdmc+" class="_3JHHN36"></a>
-    <div class="_36m0W_u">
-      <div class="_1Pn6oie" data-testid="search-overlay-shadow" aria-hidden="true" role="presentation">
-
-      </div>
-      <form action="//www.asos.com/search/" class="_3j_6oNg" data-testid="search-form" method="get">
-        <div class="h-7-BEq" data-testid="search-field">
-        <span class="_2ARPr_X" aria-hidden="true"></span>
-        <label id="chrome-search-label" for="chrome-search" hidden="">Search for items and brands</label>
-        <input type="search" id="chrome-search" name="q" class="Cyuazsm _1LCOtZ3 SJwm9Lx" autocomplete="off" autocorrect="off" spellcheck="off" placeholder="Search for items and brands" data-testid="search-input" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" maxlength="150" value="">
-        <button class="kH5PAAC" type="submit" disabled="" data-testid="search-button-inline">
-          <svg viewBox="0 0 17 17" role="img" aria-labelledby="search-icon">
-            <title id="search-icon">Search</title>
-            <path fill="currentColor" fill-rule="nonzero" d="M7.65 15.3a7.65 7.65 0 1 1 5.997-2.9c-.01.012 3.183 3.297 3.183 3.297l-1.22 1.18s-3.144-3.283-3.154-3.275A7.618 7.618 0 0 1 7.65 15.3zm0-2a5.65 5.65 0 1 0 0-11.3 5.65 5.65 0 0 0 0 11.3z"></path>
+          <div>
+            <p>Free Delivery</p>
+            <p>Ts&Cs apply. <a href="https://www.asos.com/payments-and-deliveries/delivery/"> <U>Learn more</U><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+              <path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1h-.5Z"/>
+              <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5Z"/>
+            </svg></a></p>
+          </div>
           </svg>
-        </button>
-        <div class="NOZiOAo">
-          <div class="_18a94Dv _1Qdyjs0 _1Qdyjs0" aria-live="polite">
-
-          </div>
-        </div>
       </div>
-    </form>
+    </div>
+    </div>
+    <div id="parent2">
+
+   <div >
+<h5>PRODUCT DETAILS</h5>
+<p><U>Trainers by adidas</U></p>
+<li>Part of our responsible edit</li>   
+
+
+  <li>Low-profile design</li>
+
+  <li>Lace-up fastening</li>
+  <li>Padded tongue and cuff</li>
+  <li>Signature adidas branding </li>
+  <li>EVA midsole provides lightweight cushioning </li>
+  <li>Durable rubber outsole</li>
+  <li>Textured grip tread</li>
+  
+
   </div>
-</div>
-<ul class="_3fERfnD" data-testid="widgets">
-  <li class="_3Wo6fpk mD8oZFx">
-    <div>
+
+    <div >
+<h5>PRODUCT CODE</h5>
+<p>104683196</p>
+<h5>BRAND</h5>
+<p> <U>adidas</U>  needs no introduction. The brand’s famous 3-Stripes can be seen on the track, field and in the latest streetwear trends. Scroll the <U>adidas</U>  at ASOS edit to get your fix, from fresh trainers from the iconic Superstar, Stan Smith, Gazelle and Continental 80 collections to archive-inspired adidas Originals tracksuits, T-shirts and sweatshirts. And if you’re in need of some fresh kit, then cop yourself some sweat-wicking shorts, vests and compression tights from adidas Performance.</p>
+    </div>
+
+
+    <div >
+<h5>LOOK AFTER ME</h5>
+<p>Wipe clean with a damp cloth or sponge</p>
+<h5>ABOUT ME</h5>
+<p>Breathable mesh upper
+
+Made from recycled plastic 
+After being crushed into chips, the old plastic is melted down and pressed into brand-new plastic</p>
+
+<small>Lining: 100% Textile, Sole: 100% Other materials, Upper: 50% Other materials, 50% Textile.</small>
+    </div>
+
+    </div>
+    <div id="more">
+    
+    <button id="hp" onclick= "hide()" >SHOW MORE</button>
+
+      <div id="hi" >
+    </div>
+
+    </div>
+    <div id = "review">
+
+    <div id="fi">
+      <hr>
+      <h4>REVIEWS</h4>
+      <h5>  &#9733;&#9733;&#9733;&#9733;&#9734; 4.7
+        (1,525 Reviews)</h5>
+      <p>97% of customers recommend this product</p>
+      <h6>CUSTOMER RATING</h6>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rulers" viewBox="0 0 16 16">
+        <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1H1z"/>
+      </svg> Size:</p>
+
+      <div id ="map">
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div><div> <small>Runs Small</small>      </div><div><small>Runs Large</small></div></div>
+      </div>
+
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+      </svg>
+      COMFORT:
+      </p>
+      <div id ="nap">
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div><div>     <small>Uncomfortable</small>       </div><div>     <small>Comfortable</small>  </div></div>
+      </div>
+
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+      </svg> 
+      QUALITY:</p>
+      <div id ="cap" >
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div><div>     <small>Poor</small>       </div><div>     <small>Great</small>  </div></div>
+      </div>
+      
+    </div>
+
+
+
+    <div id="sec">
+      <hr>
+     <h6>MOST RECENT REVIEW</h6>
+
+     <div id="new"> <div><h5>&#9733;&#9733;&#9733;&#9733;&#9733;</h5></div>  <div> <small> New Today</small>  </div>  </div>
+    <p> <small>Originally posted on adidas.com</small>  </p>
+
+    <h5>GREAT QUALITY AND PRICED TRAINERS</h5>
+    <p>[This review was collected as part of a promotion.] These were very reasonably priced and they are comfortable</p>
+
+    <a href="https://www.asos.com/customer-care/product-stock/how-do-product-reviews-work/"><div id="all">
+    VIEW ALL REVIWES
+    </div></a>
+
+    <p> <small>All reviews are verified by ASOS unless otherwise indicated. Where a review states 'originally posted' by one of our brand partners; this has not been verified by ASOS.</small> </p>
+  </div>
+
+    </div>
+   </div>
+    <!-- ************************************************MALE HOME PAGE ************************************************ -->
+    <!-- Top Section  -->
+    <div id="firsta">
+      <button>SALE</button>    
+      <h1>UP TO 70% OFF! <br> IT'S CALLED BIG DISCOUNT ENERGY</h1>
       <div>
-        <div id="myAccountDropdown" class="_3iG3MJz">
-          <button type="button" icon="_3iH_8F6 ToKj3Yy _3e2i979" icontype="accountUnfilled" data-testid="myAccountIcon" class="_6iPIuvw q-RpDXn _2SSHFPv" aria-expanded="false" aria-controls="myaccount-dropdown" aria-label="My Account"><span type="accountUnfilled" class="_3iH_8F6 ToKj3Yy _3e2i979 -rhP1cz gBrrjX4 _2nHArcS">
-
-          </span>
-        </button>
-        <div class="Gmnwu_e" data-testid="myaccount-dropdown" id="myaccount-dropdown"><div class="_33s2s-y">
-          <div class="Z8dxicz">
-            <div class="_10AVfLf">
-              <div class="_3dfrZFm">
-                <div class="_3hSCfS2">
-                  <span class="k3_c4ux">
-                    <a class="_1336dMe _1uUU2Co _1336dMe _1uUU2Co _1iiIFDL" href="https://my.asos.com/my-account?lang=en-GB&amp;store=ROW&amp;country=IN&amp;keyStoreDataversion=ornjx7v-36" data-testid="signin-link">Sign In</a>
-                    <div class="_3xmyjOP" aria-hidden="true">
-
-                    </div>
-                    <a class="_1336dMe _1uUU2Co _1336dMe _1uUU2Co _1iiIFDL" href="https://my.asos.com/identity/register?lang=en-GB&amp;store=ROW&amp;country=IN&amp;keyStoreDataversion=ornjx7v-36&amp;returnUrl=https%3A%2F%2Fwww.asos.com%2F%3F" data-testid="signup-link">Join</a>
-                  </span>
-                </div>
-                <button icon="_1xgEXu7 _2Dd1zdj qBDvXfo" class="_6iPIuvw q-RpDXn" data-testid="myaccount-close-btn" aria-label="Close" type="button">
-                  <span class="_1xgEXu7 _2Dd1zdj qBDvXfo -rhP1cz gBrrjX4 _2nHArcS">
-
-                  </span>
-                </button>
-              </div>
-              <div class="_12ChTgQ">
-                <ul class="_1LxmvWx">
-                  <li>
-                    <a href="https://my.asos.com/my-account?country=IN&amp;keyStoreDataversion=ornjx7v-36&amp;lang=en-GB&amp;nlid=nav%20header&amp;store=ROW" class="yPAUReS IAtMKef _2LRr-ij" data-testid="myaccount-link"><span class="CjZA9Ep _2RQ1Y7O _21TZCIw mEAMKy7">
-
-                    </span>My Account</a>
-                  </li>
-                  <li>
-                    <a href="https://my.asos.com/my-account/orders?country=IN&amp;keyStoreDataversion=ornjx7v-36&amp;lang=en-GB&amp;nlid=nav%20header&amp;store=ROW" class="yPAUReS IAtMKef _2LRr-ij" data-testid="myorders-link">
-                      <span class="_37wOqxg _2RQ1Y7O _21TZCIw mEAMKy7">
-
-                      </span>My Orders</a>
-                    </li>
-                    <li>
-                      <a href="https://www.asos.com/customer-care/returns-refunds/?nlid=nav%20header" class="yPAUReS IAtMKef _2LRr-ij" data-testid="returnsinformation-link">
-                        <span class="_2W-DtGN _2RQ1Y7O _21TZCIw mEAMKy7">
-
-                        </span>Returns Information</a>
-                      </li>
-                      <li>
-                        <a href="https://my.asos.com/my-account/contact-preferences?country=IN&amp;keyStoreDataversion=ornjx7v-36&amp;lang=en-GB&amp;nlid=nav%20header&amp;store=ROW" class="yPAUReS IAtMKef _2LRr-ij" data-testid="contactpreferences-link">
-                          <span class="_2jqSWSL _2RQ1Y7O _21TZCIw mEAMKy7">
-
-                          </span>Contact Preferences</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div>
+          <img src="https://images.asos-media.com/products/asos-design-sandals-in-olive/201370900-2?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+          <p>FOOTWEAR</p>
       </div>
-    </li>
-    <li class="_3Wo6fpk">
-      <a type="a" href="https://www.asos.com/saved-lists/?nlid=nav header" icon="_26lJ0fq ToKj3Yy _3e2i979" icontype="heartUnfilled" data-testid="savedItemsIcon" class="_6iPIuvw q-RpDXn _2SSHFPv" aria-label="Saved Items">
-        <span type="heartUnfilled" class="_26lJ0fq ToKj3Yy _3e2i979 -rhP1cz gBrrjX4 _2nHArcS"></span>
-      </a>
-    </li>
-    <li class="_3Wo6fpk"><a type="a" href="https://www.asos.com/bag?nlid=nav header" icon="AckDUvD ToKj3Yy _3e2i979" icontype="bagUnfilled" data-testid="miniBagIcon" class="_6iPIuvw q-RpDXn _2SSHFPv" aria-label="Bag 0 items">
-      <span type="bagUnfilled" class="AckDUvD ToKj3Yy _3e2i979 -rhP1cz gBrrjX4 _2nHArcS"></span>
-    </a>
-  </li>
-</ul>
-</div>
-</div>
-<div id="sc-sticky-header-portal"></div>
-</div>
-</div>
-<section id="globalBannerComponent" class="src-GlobalBanner-GlobalBanner_globalBanner">
-  <div class="src-GlobalBanner-GlobalBanner_loaded">
-    <div class="src-GlobalBanner-Column-Column_column" style="background-color: rgb(204, 255, 0);">
-      <div class="src-GlobalBanner-Unit-Unit_unit src-GlobalBanner-Unit-Unit_unitCenter">
-        <a href="/women/ctas/coded-promos/promo-3/cat/?cid=50047&amp;ctaref=globalbanner|ww|upto25offeverything" class="src-GlobalBanner-Button-Button_button" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);">WOMEN</a>
-        <button class="src-GlobalBanner-Content-Content_content src-GlobalBanner-Content-Content_contentCenter" aria-describedby="globalBannerTooltip-0" style="font-size: 14px; color: rgb(0, 0, 0);">
-          <span class="src-GlobalBanner-Content-Content_copy"><strong>UP TO 25% OFF EVERYTHING!*<br>
-LET'S GO SHOPPING<br>
-With code: DAWN</strong>
-</span>
-</button>
-<div class="
-      src-GlobalBanner-Tooltip-Tooltip_wrapperCenter src-GlobalBanner-Tooltip-Tooltip_hidden
-    ">
-    <div class="src-GlobalBanner-Tooltip-Tooltip_tooltip" id="globalBannerTooltip-globalBannerTooltip-0">*Enter code DAWN at checkout to receive discount. Percentage discounts will vary depending upon the product purchased. Ends 8am UTC on 26 February 2023. Code can be used multiple times per customer up to a maximum pre-discount spend of £500/€690 per order. Can’t be used with other promo codes or on gift vouchers, delivery charges, Premier Delivery or ASOS Marketplace. Country exclusions apply. Selected marked products excluded from promo.
-
-    </div>
+      <div>
+          <img src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-white-with-photographic-back-print/201154126-1-white?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+          <p>TOPS</p>
+      </div>
+      <div>
+          <img src="https://images.asos-media.com/products/adidas-training-earth-shades-aeroready-panelled-long-sleeve-half-zip-sweat-in-grey/201104836-1-grey?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+          <p>SPORT BRANDS</p>
+      </div>
+      <div>
+          <img src="https://images.asos-media.com/products/adidas-training-earth-shades-aeroready-panelled-long-sleeve-half-zip-sweat-in-grey/201104836-1-grey?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+          <p>TAILORING</p>
+      </div>
+      <div>
+          <img src="https://images.asos-media.com/products/asos-actual-oversized-hoodie-with-logo-front-print-in-rose/201355721-1-rosepink?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+          <p>HOODIES & SWEATSHIRTS</p>
+      </div>
+      <div>
+          <img src="https://images.asos-media.com/products/puma-downtown-colourblock-shorts-in-pink-exclusive-to-asos/24307413-3?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+          <p>SPORTS & TROUSERS</p>
+      </div>
+      </div>
+      <button id="but">VIEW ALL</button> 
+      <p>Limited time only. Selected styles marked down as shown.</p>
+ </div>
+ <div id="bgi">
+      <div>
+          <h3>Summer juice</h3> 
+          <p>SHOP ASOS DESIGN</p>
+      </div>
+ </div>
+ <div id="thirdb">
+      <div>
+          <img src="https://content.asos-media.com/-/media/homepages/mw/2022/june/06/moments/mw_asos_design_festive_jewels_moment_870x1110.jpg" alt="">
+          <h4>ASOS DESIGN JEWELS</h4>
+          <p>E-boy energy</p>
+       </div>
+      <div>
+          <img src="https://content.asos-media.com/-/media/homepages/mw/2022/june/06/moments/mw_au_footwear_moment_870x1110.jpg" alt="">
+          <h4>SHOES</h4>
+          <p>Sneaky picks</p>
+      </div>
+      <div>
+          <img src="https://content.asos-media.com/-/media/homepages/mw/2022/june/06/moments/mw_asos_design_skate_prints_moment_870x1110.jpg" alt="">
+          <h4>SKATE PRINTS</h4>
+          <p>Punk perfection ASOS DESIGN</p>
+      </div>
+      <div>
+          <img src="https://content.asos-media.com/-/media/homepages/mw/2022/june/06/moments/mw_hiit_moment_870x1110.jpg" alt="">
+          <h4>HIIT</h4>
+          <p>Ready, sweat, go!</p>
+      </div>
   </div>
-  <a href="/men/ctas/coded-promos/promo-5/cat/?cid=50059&amp;ctaref=globalbanner|mw|upto25offeverything" class="src-GlobalBanner-Button-Button_button" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);">MEN</a>
-</div>
-</div>
-</div>
-</section>
-<div class="_3bNxItQ" style="display:none">
-  <div class="_1uU7K8C"><
-    div class="aaO9uKX">
-    <div class="_3z77gIp _3t_xmNR">
-      <div class="_2wLMA10">
-
+  <div id="imga">
+      <img src="https://content.asos-media.com/-/media/homepages/unisex/homepages/2022/06_june/pride---banner-1---2022/uk/pride_hp_p1_final_dt_1258_150-v2-new.png" alt="">
+  </div>
+  <div id="pic">
+      <div>
+          <img src="https://images.asos-media.com/products/topman-oversized-sweatshirt-in-blue/201837950-1-blue?$n_320w$&wid=317&fit=constrain" alt="">
+          <h1>TOPMAN</h1>
+          <p>Top-tier threads</p>
+          <button>SHOP THE BRAND</button>
       </div>
-      <div class="_320d9TZ -BhHZAH">ASOS</div>
-      <div>Available in the Play Store</div>
+      <div>
+          <img src="https://images.asos-media.com/products/adidas-originals-sports-resort-swim-shorts-in-mint-green/201828336-1-mintgreen?$n_320w$&wid=317&fit=constrain" alt="">
+          <h1>SWIM ESSENTIALS</h1>
+          <p>Everything's just beachy</p>
+          <button>SHOP NOW</button>
+      </div>
+  </div>
+  <div id="td" >
+      <h2>TRENDING BRANDS</h2>
+      <div>
+          <div>
+              <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/monkl-hp-logos-256x256.jpg" alt="">
+          </div>
+          <div>
+              <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/never-fully-dressed-hp-logos-256x256.png" alt="">
+          </div>
+          <div>
+              <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/collusion-hp-logos-256x256.jpg" alt="">
+          </div>
+          <div>
+              <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/reclaimed-vintage-hp-logos-256x256.jpg" alt="">
+          </div>
+          <div>
+              <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/1x12x---test.png" alt="">
+          </div>
+          <div>
+              <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/weekday-hp-logos-256x256.jpg" alt="">
+          </div>
+      </div>
+  </div>
+    <!-- *******************************FEMALE HOME PAGE***************************************************** -->
+    <div id="femaleHomePageBlock1">
+        <button>SALE</button>    
+        <h1>UP TO 70% OFF! <br> IT'S CALLED BIG DISCOUNT ENERGY</h1>
+        <div>
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-plunge-neck-fluffy-mini-dress-in-hot-pink/201624497-1-hotpink?$n_640w$&wid=513&fit=constrain&hei=272&wid=213&bgc=000000" alt="">
+            <p>DRESSES</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/threadbare-cut-out-front-crop-top-in-orange/202048146-1-orange?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>TOPS</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-wide-fit-haven-padded-toe-thong-heeled-sandals-in-green/200732619-4?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>SHOES</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/topshop-paperbag-waist-shorts-in-animal/202466210-1-animal?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>SHORTS & TROUSERS</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-recycled-frame-chunky-square-sunglasses-with-colour-block-bevel/201734940-1-multi?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>ACCESSORIES</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/nike-pro-training-zip-front-crop-top-in-blue/201526374-1-blue?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>SPORTS BRANDS</p>
+        </div>
+        </div>
+        <button id="but">VIEW ALL</button> 
+        <p>Limited time only. Selected styles marked down as shown.</p>
+   </div>
+   <div id="femaleHomePageBlock2">
+        <div>
+            <h1>Festi-gal</h1> 
+            <p>SHOP ASOS DESIGN</p>
+        </div>
+   </div>
+   <div id="femaleHomePageBlock3">
+        <div>
+            <img src="https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/119158763_model_1-(1).jpg" alt="">
+            <h4>ASOS WEEKEND COLLECTIVE</h4>
+            <p>Sunday energy intensifies</p>
+         </div>
+        <div>
+            <img src="https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/ww_glam_coords_moment_870x1110.jpg" alt="">
+            <h4>GLAM CO-ORDS</h4>
+            <p>Twin flames</p>
+        </div>
+        <div>
+            <img src="https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/220511_vk_asos_shot_04_310-(1).jpg" alt="">
+            <h4>TOPSHOP</h4>
+            <p>You wanna be on Top(shop)</p>
+        </div>
+        <div>
+            <img src="https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/2022-03-17_ord-lb-serum-visual_v3.jpg" alt="">
+            <h4>THE ORDINARY</h4>
+            <p>Anything but</p>
+        </div>
     </div>
-    <div class="_3qe3HxY">
-      <button data-testid="native-app-banner-open" class="_JXIMdP _1AYnqSm">View in App</button>
-      <button class="_3zWq_3v _1AYnqSm">Get App</button></div></div></div>
-      <button class="_13FVfZq _1LsdtI9" aria-label="Close">X</button></div>
-    </header></div>
-
-  <main id="chrome-app-container">
-    <section class="mu-section">
-        <div class="genericSplash js-fullWidthContainer ">
-            <div class="genericSplash__wrapper">
-                <h1 class="mu__imageWrap">
-                    <span class="spinner"></span>
-                    <picture>
-                        <source srcset="https://content.asos-media.com/-/media/homepages/unisex/generic-hp/jan-2023/generic-hp/generic-hp-mobile-unisex-640x1070.jpg" media="(max-width: 768px)">
-                        <img src="https://content.asos-media.com/-/media/homepages/unisex/generic-hp/jan-2023/generic-hp/generic-hp-desktop-unisex-1400x698.jpg" alt="">
-                    </picture>
-                </h1>
-    
-                <div class="genericSplash__copy">
-                    <div class="genericSplash__copyContainer">
-                            <h2 class="genericSplash__title">
-                                <span class="highlight" style="color:#000000;background:#ffffff; box-shadow: 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff;;">
-                                    This is ASOS
-                                </span>
-                            </h2>
-    
-                            <p class="genericSplash__description">
-                                <span class="highlight" style="color:#000000;background:#ffffff; box-shadow: 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff, 10px 0 0 #ffffff, -10px 0 0 #ffffff;;">
-                                    ASOS DESIGN and 850+ brands
-                                </span>
-                            </p>
-    
-                    </div>
-                        <div class="genericSplash__ctas">
-                            <div class="genericSplash__ctasContainer">
-    
-                                <a class="mu__cta" href="/women/?ctaref=hp|gen|top|women" target="" style="color:#000000;border-color:#ffffff; border-style: solid; border-width: 2px;;background:#ffffff;" data-hover-color="#ffffff" data-hover-border="#000000" data-hover-background="#000000"><span style="width: 132px;">SHOP WOMEN</span></a>
-                            </div>
-                            <div class="genericSplash__ctasContainer">
-                                <a class="mu__cta" href="/men/?ctaref=hp|gen|top|men" target="" style="color:#000000;border-color:#ffffff; border-style: solid; border-width: 2px;;background:#ffffff;" data-hover-color="#ffffff" data-hover-border="#000000" data-hover-background="#000000"><span style="width: 132px;">SHOP MEN</span></a>
-                            </div>
-                        </div>
-                </div>
-    
-                <div class="genericSplash__overlay">
-                    <div class="genericSplash__overlayContainer">
-                        <div class="genericSplash__serviceMessage ">
-    <a href="/payments-and-deliveries/delivery/?ctaref=hp|gen|service|delivery" target="_self" class="genericSplash__message">                            <span class="genericSplash__messageContainer genericSplash__messageContainer--icon">
-                                    <img class="genericSplash__messageIcon">
-                                </span>
-                            <span class="genericSplash__messageContainer genericSplash__messageContainer--copy">
-                                <p class="genericSplash__messageCopy">EASY WORLDWIDE DELIVERY</p>
-                                <p class="genericSplash__messageCopy genericSplash__messageCopy--small">*minimum spends apply</p>
-                            </span>
-                            
-                            </a>
-    
-    <div class="genericSplash__message">                            <span class="genericSplash__messageContainer genericSplash__messageContainer--icon">
-                                    <img class="genericSplash__messageIcon">
-                                </span>
-                                <span class="genericSplash__messageContainer genericSplash__messageContainer--copy">
-                                    <p class="genericSplash__messageCopy">ASOS DESIGN and 850+ brands</p>
-                                    <p class="genericSplash__messageCopy genericSplash__messageCopy--small">  </p>
-                                </span>
-                            
-                            </div>
-    
-    
-                        </div>
-                    </div>
-                </div>
+    <div id="femaleHomePageBlock4">
+        <img src="https://content.asos-media.com/-/media/homepages/unisex/homepages/2022/06_june/pride---banner-1---2022/uk/pride_hp_p1_final_dt_1258_150-v2-new.png" alt="">
+    </div>
+    <div id="femaleHomePageBlock5">
+        <div>
+            <img src="https://images.asos-media.com/products/asos-edition-wrap-front-crop-top-with-open-back-and-tie-in-caramel/201415925-1-cinnamonrose?$n_480w$&wid=476&fit=constrain" alt="">
+            <h1>ASOS EDITION</h1>
+            <p>Material girl</p>
+            <button>SHOP THE BRAND</button>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-strappy-mini-dress-with-bias-ruffle-detail-in-red/202140436-1-red?$n_480w$&wid=476&fit=constrain" alt="">
+            <h1>SUMMER ROMANCE</h1>
+            <p>Ruffle some feathers</p>
+            <button>SHOP ASOS DESIGN</button>
+        </div>
+    </div>
+    <div id="femaleHomePageBlock6" >
+        <h2>TRENDING BRANDS</h2>
+        <div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/monkl-hp-logos-256x256.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/never-fully-dressed-hp-logos-256x256.png" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/collusion-hp-logos-256x256.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/reclaimed-vintage-hp-logos-256x256.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/1x12x---test.png" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/weekday-hp-logos-256x256.jpg" alt="">
             </div>
         </div>
-    </section>
-    </main>
-
-    <!-- ======================= footer part ===================== -->
+    </div>
+     <!-- *************************************************************footer part******************************************************** -->
+     <hr />
      <div id="slogo">
        <div>
          <a href="https://www.facebook.com/ASOS/">
@@ -400,5 +635,7 @@ With code: DAWN</strong>
          </div>
        </div>
      </div>
+
 </body>
 </html>
+<script src="index.js"></script>
